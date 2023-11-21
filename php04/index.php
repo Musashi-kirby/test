@@ -38,7 +38,7 @@ $question = $options[mt_rand(0,3)];
                 </p>
             </div>
             <form class="quiz-form" action="result.php" method="post">
-                <input type="hidden" name="answer_code" value="<?php echo $option['code'] ?>">
+                <input type="hidden" name="answer_code" value="<?php echo $question['code'] ?>">
                 <div class="quiz-form__item">
                     <?php foreach($options as $option): ?>
                     <div class="quiz-form__group">
